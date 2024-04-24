@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>click</button>
+  </body>
+  <script>
+    const button = document.querySelector("button");
+
+    button.addEventListener("click", () => alert("1")); // (1) ทำ
+    button.removeEventListener("click", () => alert("1")); // (2) ไม่ทำเพราะไปลบ event listener
+    button.onclick = () => alert(2); // (3) ทำ
+  </script>
+</html>

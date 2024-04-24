@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const ul = document.createElement("ul");
+      document.body.append(ul);
+      let text = prompt("Enter your text");
+
+      while (!(text.trim() === "" || text === null)) {
+        const li = document.createElement("li");
+        li.textContent = text;
+        ul.append(li);
+        text = prompt("Enter your text");
+      }
+    </script>
+  </body>
+</html>

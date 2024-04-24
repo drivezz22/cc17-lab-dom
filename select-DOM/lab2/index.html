@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h2 class="title-1">List of companies</h2>
+      <ul>
+        <li id="1">Google</li>
+        <li class="active" id="2">Yahoo</li>
+        <li id="3">Tencent</li>
+      </ul>
+    </div>
+    <script>
+      const h2QuerySelector = document.querySelector("h2");
+      const h2QuerySelectorAll = document.querySelectorAll("h2")[0];
+      const h2GetElementsByClassName = document.getElementsByClassName("title-1")[0];
+      const h2GetElementsByTagName = document.getElementsByTagName("h2")[0];
+
+      console.log(h2QuerySelector);
+      console.log(h2QuerySelectorAll);
+      console.log(h2GetElementsByClassName);
+      console.log(h2GetElementsByTagName);
+    </script>
+  </body>
+</html>

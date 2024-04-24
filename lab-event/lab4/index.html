@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="https://google.com">Google</a>
+    <script>
+      const a = document.querySelector("a");
+      a.addEventListener("click", (e) => {
+        let lots_of_stuff_already_done = false;
+        e.preventDefault();
+        if (confirm("Leave for https://google.com?")) window.location.href = "https://google.com";
+      });
+    </script>
+  </body>
+</html>

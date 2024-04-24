@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form onsubmit="alert('Form is submitted')"> -->
+    <form action="#">
+      <button type="submit">click</button>
+    </form>
+    <script>
+      const form = document.querySelector("form");
+      //   form.onsubmit = () => {
+      //     alert("Form is submitted");
+      //   };
+      function submit(e) {
+        e.preventDefault();
+        alert("Form is submitted");
+        form.removeEventListener("submit", submit);
+      }
+      form.addEventListener("submit", submit);
+    </script>
+  </body>
+</html>
