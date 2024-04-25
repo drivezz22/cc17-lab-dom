@@ -11,7 +11,7 @@
     <script>
       const btn = document.querySelector("button");
       const p = document.querySelector("p");
-      btn.addEventListener("click", () => {
+      function toggleText() {
         p.classList.toggle("hidden");
         if (p.classList.contains("hidden")) {
           p.style.display = "none";
@@ -20,7 +20,8 @@
           p.style.display = "block";
           btn.textContent = "Hide";
         }
-      });
+      }
+      btn.addEventListener("click", toggleText);
     </script>
   </body>
 </html>

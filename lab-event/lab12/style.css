@@ -1,0 +1,12 @@
+#header {
+  padding: 10px;
+}
+#content div {
+  padding: 5px;
+}
+#content div span {
+  margin-right: 5px;
+}
+#content div button {
+  margin: 0 5px;
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  justify-content: flex-start;
+}
+
+label {
+  width: 80px;
+}
+
+select {
+  width: 80px;
+}
